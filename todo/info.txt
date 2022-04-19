@@ -1,0 +1,3 @@
+PHP version : 7.4.28
+APACHE version : 2.4.53
+MYSQL version : 8.0.28

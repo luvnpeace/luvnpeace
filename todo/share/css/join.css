@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body{margin:0;}
+.container{width:100vw; max-width:100%; height:100vh; overflow-y:hidden; background-color:#29141A; color:#FFF3D4;}
+
+.title{text-align:center; font-size:3vw; padding:2%; font-weight:bold; width:96%;}
+.sub_title{text-align:center; font-size:2vw; padding:2%; font-weight:bold; width:96%; color:#FFAAAA;}
+
+.input{text-align:center; font-size:1vw; padding:2%; font-weight:bold; width:96%; height:10%;}
+.input > form{width:100%; height:100%;}
+.input > form > div{width:100%; height:50%;}
+.input > form > div > input{width:20%; height:70%; vertical-align:middle; border:1px solid #29141A; border-width:0 0 1px 0; text-align:center; font-size:1vw;}
+
+.button{text-align:center; font-size:1vw; padding:2%; font-weight:bold; width:96%; height:7%; margin-top:25vh;}
+.button > div{width:100%; height:100%;}
+.button > div > button{width:20.2%; height:70%; border:0; background-color:#FFAAAA; color:#29141A; cursor:pointer; font-size:1vw; font-weight:bold;}

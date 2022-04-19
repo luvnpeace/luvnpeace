@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body{margin:0;}
+.container{width:100vw; max-width:100%; height:100vh; overflow-y:hidden; background-color:#29141A; color:#FFF3D4;}
+
+.title{text-align:center; font-size:3vw; padding:2%; font-weight:bold; width:96%;}
+.sub_title{text-align:center; font-size:2vw; padding:2%; font-weight:bold; width:96%; color:#FFAAAA;}
+
+.content{width:100%; height:100%;}
+
+.back{width:10%; height:5%; text-align:center; margin:0 auto;}
+.back > button{width:100%; height:100%; text-align:center; background-color:#FFF3D4; color:#29141A; border:0; cursor:pointer; font-size:1vw; font-weight:bold;}
+
+.find_id{display:inline-block; width:49%; height:30%; text-align:center; margin-top:10vh;}
+.find_id > div.f_title{font-size:2vw; font-weight:bold; height:30%;}
+.find_id > div.input{width:40%; height:20%; margin:0 auto;}
+.find_id > div.input > div{width:100%; height:100%;}
+.find_id > div.input > div > input{width:98%; height:70%; text-align:center;}
+.find_id > div.input > div#find_id_chk{font-weight:bold;}
+.find_id > div.button{width:42%; height:20%; margin:10vh auto 0 auto;}
+.find_id > div.button > div{width:100%; height:100%;}
+.find_id > div.button > div > button{width:95%; height:100%; background-color:#FFAAAA; color:#29141A; font-size:1.2vw; font-weight:bold; border:0;}
+
+.find_pw{display:inline-block; width:49%; height:30%; text-align:center; margin-top:10vh;}
+.find_pw > div.f_title{font-size:2vw; font-weight:bold; height:30%;}
+.find_pw > div.input{width:40%; height:20%; margin:0 auto;}
+.find_pw > div.input > div{width:100%; height:100%;}
+.find_pw > div.input > div > input{width:98%; height:70%; text-align:center;}
+.find_pw > div.input > div#find_pw_chk{font-weight:bold;}
+.find_pw > div.input > div.n_pw{}
+.find_pw > div.input > div.n_pw > input{}
+.find_pw > div.button{width:42%; height:20%; margin:10vh auto 0 auto;}
+.find_pw > div.button > div{width:100%; height:100%;}
+.find_pw > div.button > div > button{width:95%; height:100%; background-color:#FFAAAA; color:#29141A; font-size:1.2vw; font-weight:bold; border:0;}

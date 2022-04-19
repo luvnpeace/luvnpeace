@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+body{margin:0;}
+.container{width:100vw; max-width:100%; height:100vh; overflow-y:hidden; background-color:#29141A; color:#FFF3D4;}
+.helper{height:100%; display:inline-block; vertical-align:middle;}
+
+.title{display:inline-block; text-align:start; font-size:2vw; padding:2%; font-weight:bold; width:45%;}
+.title > span:nth-child(1){font-size:2.3vw;}
+
+.menu{width:43%; display:inline-block; height:10%; text-align:end;}
+.menu > div{display:inline-block; margin:2%; height:50%; width:20%;}
+.menu > div > button{height:100%; display:inline-block; background-color:#FFAAAA; font-size:1.2vw; font-weight:bold; border:0; cursor:pointer; border-radius:20px; width:100%;}
+
+.content{width:100%; height:85%; font-size:0;}
+.calendar{width:46%; height:100%; display:inline-block; vertical-align:middle; font-size:1.2vw; padding:2% 2% 2% 2%;}
+
+.c_title{height:8%; text-align:center;}
+.c_title .c_helper{height:100%; display:inline-block; vertical-align:middle;}
+.c_title .c_left{width:6%; height:100%; display:inline-block; vertical-align:middle; background:url('/todo/share/images/left.png') center center/100% 100% no-repeat;}
+.c_title .c_year{width:20%; height:100%; display:inline-block; vertical-align:middle;}
+.c_title .c_year select{width:100%; height:100%; text-align:center; color:#29141A; font-size:2vw; font-weight:bold; padding:1% 1%; border:none; border-radius:0; background:#FFF3D4 url('/todo/share/images/arrow.png') 95% 50%/5% 20% no-repeat; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+.c_title .c_year select::-ms-expand{display:none;}
+.c_title .c_month{width:20%; height:100%; display:inline-block; vertical-align:middle;}
+.c_title .c_month select{width:100%; height:100%; text-align:center; color:#29141A; font-size:2vw; font-weight:bold; padding:1% 1%; border:none; border-radius:0; background:#FFF3D4 url('/todo/share/images/arrow.png') 95% 50%/5% 20% no-repeat; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+.c_title .c_month select::-ms-expand{display:none;}
+.c_title .c_right{width:6%; height:100%; display:inline-block; vertical-align:middle; background:url('/todo/share/images/right.png') center center/100% 100% no-repeat;}
+
+.c_content{width:100%; height:70%; text-align:center; margin-top:10%; font-weight:bold;}
+.c_content table{width:80%; height:100%; text-align:center; margin:auto; border-collapse:separate; border-spacing:15px;}
+.c_content table thead{height:10%;}
+.c_content table thead tr{height:100%;}
+.c_content table thead tr td{width:14%; background-color:#FFAAAA; border-radius:20px; color:#29141A;}
+.c_content table tbody{height:90%;}
+.c_content table tbody tr{height:10%;}
+.c_content table tbody tr td{width:14%; background-color:#FFF3D4; color:#29141A; border-radius:20px;}
+.c_content table tbody tr td.off:hover{background-color:#D5A66B; cursor:pointer;}
+.c_content table tbody tr td.off.active:hover{background-color:#cc66ff; cursor:pointer;}
+.c_content table tbody tr td.on:hover{background-color:#D5A66B; cursor:pointer;}
+.c_content table tbody tr td.on.active:hover{background-color:#cc66ff; cursor:pointer;}
+.c_content table tbody tr td.off.active{background-color:#ff6666;}
+.c_content table tbody tr td.on{background-color:#b37932;}
+.c_content table tbody tr td.on.active{background-color:#aa00ff;}
+
+.schedule{width:46%; height:100%; display:inline-block; vertical-align:middle; font-size:1.2vw; padding:2% 2% 2% 2%;}
+.schedule > div{width:80%; height:85%; margin:auto;}
+.schedule > div > div.daily,.weekly,.monthly,.yearly,.project{width:100%; height:calc(100% / 5.5 + 0.5px); background-color:#FFF3D4; color:#29141A; border-radius:0 0 20px 0/0 0 20px 0; margin:15px auto;}
+.schedule > div > div .s_title{width:98%; height:30%; background-color:#FFAAAA; font-size:1.2vw; font-weight:bold; padding-left:2%;}
+.schedule > div > div .s_content{}
+
+.schedule > div > .de_title{width:30%; height:5%; background-color:#FFAAAA; color:#29141A; font-size:1.2vw; font-weight:bold; text-align:center; border-radius:20px 20px 0 0/20px 20px 0 0;}
+.schedule > div > .de_content{width:36%; height:70%; background-color:#FFF3D4; color:#29141A; font-size:1.2vw; border-radius:0 0 20px 0/0 0 20px 0; position:absolute;}
+.schedule > div > div > .de_head{width:100%; height:7%; background-color:#FFF3D4; color:#29141A; font-size:1.2vw; font-weight:bold; border-radius:0 0 20px 0/0 0 20px 0;}
+.schedule > div > div > .de_head > div{display:inline-block; height:100%; vertical-align:middle; padding:1.5% 1% 2% 1%;}
+.schedule > div > div > .de_head > div:nth-child(2){width:24%; text-align:start; padding-left:4%;}
+.schedule > div > div > .de_head > div:nth-child(3){width:45%; text-align:start; padding-left:2%;}
+.schedule > div > div > .de_head > div:nth-child(4){width:15%; text-align:start;}
+
+.schedule > div > .de_content > .de_add{width:100%; height:10%; border-radius:0 0 20px 0/0 0 20px 0; text-align:center; position:relative; bottom:-4%;}
+.schedule > div > .de_content > .de_add > button{width:20%; height:100%; font-size:1.8vw; font-weight:bold; text-align:center; vertical-align:middle; border:0; background-color:#ff6666; color:#29141A; cursor:pointer;}
+.schedule > div > .de_content > .de_add > .add_helper{height:100%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_add > .add_time{width:28%; height:100%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_add > .add_time > input{width:30%; height:70%; vertical-align:middle; padding:4px; margin:4px 8px; border:1px solid #29141A; border-width:0 0 1px 0; background-color:#FFF3D4; color:#29141A; text-align:center; font-size:1vw;}
+.schedule > div > .de_content > .de_add > .add_schedule{width:42%; height:100%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_add > .add_schedule > input{width:80%; height:70%; vertical-align:middle; padding:4px; margin:4px 8px; border:1px solid #29141A; border-width:0 0 1px 0; background-color:#FFF3D4; color:#29141A; text-align:center; font-size:1vw;}
+.schedule > div > .de_content > .de_add > .add_control{width:20%; height:100%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_add > .add_control > button{width:38%; height:88%; font-size:1vw; font-weight:bold; text-align:center; padding:4px; margin:0 8px; vertical-align:middle; border:0; background-color:#ff6666; color:#29141A; cursor:pointer;}
+
+.schedule > div > .de_content > .de_body{width:100%; height:75%; overflow-y:scroll; border-top:1px solid #29141A; border-bottom:1px solid #29141A;}
+.schedule > div > .de_content > .de_body > div{width:100%; height:12%; padding:0;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(1){height:100%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(2){width:12%; display:inline-block; vertical-align:middle; padding:4px 1%; margin:4px 1%; text-align:center; background-color:#FFAAAA;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(3){width:12%; display:inline-block; vertical-align:middle; padding:4px 1%; margin:4px 1%; text-align:center; background-color:#FFAAAA;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(4){width:45%; display:inline-block; vertical-align:middle; padding:8px 1%; margin:4px 1%; text-align:start; word-break:break-all;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(4).success{text-decoration:line-through;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(5){width:15%; height:100%; margin-right:2%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(5) > div:nth-child(1){height:100%; display:inline-block; vertical-align:middle;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(5) > div:nth-child(2){width:24%; height:40%; margin:0 4%; display:inline-block; vertical-align:middle; background:url('/todo/share/images/check.png') center center/100% 100% no-repeat; cursor:pointer;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(5) > div:nth-child(3){width:24%; height:40%; margin:0 4%; display:inline-block; vertical-align:middle; background:url('/todo/share/images/modi.png') center center/100% 100% no-repeat; cursor:pointer;}
+.schedule > div > .de_content > .de_body > div > div:nth-child(5) > div:nth-child(4){width:24%; height:40%; margin:0 4%; display:inline-block; vertical-align:middle; background:url('/todo/share/images/delete.png') center center/100% 100% no-repeat; cursor:pointer;}

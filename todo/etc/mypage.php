@@ -11,6 +11,7 @@
   <? include_once $_SERVER['DOCUMENT_ROOT'].'/todo/inc/session_chk.php'; ?>
   <script src='/todo/share/js/function.js'></script>
   <link rel='stylesheet' href='/todo/share/css/mypage.css'>
+  <link rel='stylesheet' href='/todo/share/css/font.css'>
  </head>
  <body onload="pwBoxOp2();">
  <div class="container">

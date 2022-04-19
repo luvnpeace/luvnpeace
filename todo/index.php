@@ -10,6 +10,7 @@
   <? include_once '/todo/inc/headinfo.php'; ?>
   <script src='/todo/share/js/function.js'></script>
   <link rel='stylesheet' href='/todo/share/css/index.css'>
+  <link rel='stylesheet' href='/todo/share/css/font.css'>
  </head>
  <body>
  <div class="container">

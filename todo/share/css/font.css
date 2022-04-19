@@ -1,0 +1,8 @@
+@charset "utf-u";
+
+@font-face{font-family:'OptimusPrinceps'; src:url('/todo/share/fonts/OptimusPrinceps.ttf');}
+
+body{font-family:'OptimusPrinceps';}
+button{font-family:'OptimusPrinceps';}
+input{font-family:'OptimusPrinceps';}
+select{font-family:'OptimusPrinceps';}
